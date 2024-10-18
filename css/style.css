@@ -1,0 +1,352 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+button {
+  outline: none;
+  border-style: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #333333;
+}
+/* Блок 1. Баннер статический */
+/* banner */
+.banner {
+  background-image: url(../images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  height: 400px;
+}
+
+.banner__inner {
+  padding-top: 40px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 370px;
+}
+
+.banner-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 20px;
+  padding: 5px 50px;
+  border-radius: 50px;
+  background: #ccd9db75;
+  border: 1px solid #fff;
+}
+
+.banner__top-logo {
+  width: 160px;
+  height: 23px;
+}
+
+.banner__top-img {
+  width: 50px;
+  height: 55px;
+}
+
+.banner-top__text {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 120%;
+  color: #fff;
+  /* max-width: 670px; */
+  /* width: 100%; */
+  margin: 0 auto;
+  text-align: center;
+}
+.banner__text {
+  font-size: 24px;
+  /* margin-top: 10px; */
+  font-size: 20px;
+  padding: 15px 22px;
+  border-radius: 10px;
+  background: #ccd9db75;
+  border: 1px solid #fff;
+}
+
+.banner__text span {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 3px 1px 4px rgb(28 26 26 / 75%);
+  display: block;
+  margin-bottom: 20px;
+  /* color: #da1bfd; */
+  /* color: #df2b2b; */
+}
+
+/* Блок 2. Text */
+.top {
+  padding: 80px 0 100px 0;
+  background: linear-gradient(360deg, #fff -14%, #ffbee1 100%);
+}
+
+.top__text,
+.final__inner,
+.info__inner {
+  /* width: 55%; */
+  margin: 0 auto;
+}
+
+.top__text-title,
+.top__text-text {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.top__text-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.top__text-title span {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.top__text-expert a {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #c22251;
+  /* color: #c22251; */
+}
+
+/* info */
+.info {
+  padding-bottom: 50px;
+  background: linear-gradient(180deg, #fff 75%, #ffbee1 100%);
+}
+
+.info__title {
+  color: #000;
+}
+
+/* .info__inner {
+  width: 60%;
+} */
+
+.info__text {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #333333;
+  margin: 30px 0 20px 0;
+}
+
+.info__list {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.info__list li {
+  padding-left: 50px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.info__list li span {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  font-weight: 600;
+}
+
+.info__list p {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.info__text-item {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #333333;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.info__text-item + .info__text-item {
+  margin-top: 20px;
+}
+
+/* Блок 4. Подарки */
+/* present */
+.present {
+  padding: 90px 0 100px;
+  background: linear-gradient(180deg, #fff 29%, #ffbee1 100%);
+  position: relative;
+}
+
+/* .prsent-box {
+  background: linear-gradient(360deg, #fff 68%, #ffbee1 90%);
+} */
+
+/* .present__inner {
+  text-align: center;
+  margin-bottom: 50px;
+} */
+
+.tabs {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff0f8;
+  height: 54px;
+  border-radius: 37px;
+}
+
+.tabs span {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  height: 54px;
+  width: 100%;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tabs span:hover {
+  color: #c22251;
+}
+.tabs .tab.active:hover {
+  color: #fff;
+}
+
+.tab.active {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #c22251;
+  height: 54px;
+  border-radius: 37px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.tab-item {
+  display: none;
+}
+
+.tab-item.active-tab {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.tab__content {
+  /* max-width: 800px; */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tab-item img {
+  position: relative;
+  max-width: 255px;
+  width: 100%;
+  /* height: 409px; */
+}
+
+img.mfp-img {
+  /* max-width: 1220px !important;
+  width: 100% !important;
+  height: auto !important; */
+  max-height: 860px !important;
+}
+
+/* final */
+.final {
+  background: linear-gradient(360deg, #fff 0%, #ffbee1 70%);
+  margin-bottom: 100px;
+}
+
+.final__inner {
+  text-align: center;
+}
+
+.final__inner p {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.final__inner p + p {
+  margin-top: 30px;
+}
+
+.final__btn {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  color: #fbfbfb;
+  margin-top: 80px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  background: #c22251;
+  /* border: 1px solid #a305a5; */
+  box-shadow: 1px 4px 10px 1px rgb(0 0 0 / 22%);
+}
